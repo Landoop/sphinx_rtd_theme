@@ -139,7 +139,10 @@
           {% endif %}
           {% endif %}
 
-          {% include "searchbox.html" %}
+          <div>
+            {% include "searchbox.html" %}
+            {% include "versions.html" %}
+          </div>
 
           {% endblock %}
       </div>
@@ -194,7 +197,6 @@
     </section>
 
   </div>
-  {% include "versions.html" %}
 
   {% if not embedded %}
 
